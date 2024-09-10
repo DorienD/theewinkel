@@ -1,0 +1,92 @@
+html {
+    --primaryColor: #050542;
+    --secondaryColor: #66e5bf;
+    --tertiaryColor: #a675f5;
+}
+
+body {
+    font-family: arial, sans-serif;
+    color: var(--primaryColor);
+}
+
+/*@media (min-width: 600px) {
+    body {
+        background: red;
+    }
+}*/
+
+h1,h2,h3 {
+    font-family: Georgia, sans-serif;
+    text-wrap: balance;
+}
+
+a {
+    color: currentColor;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    margin-bottom: 1rem;
+    border: 1px solid blue;
+}
+
+main {
+    margin-bottom: 1rem;
+    border: 1px solid red;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    border: 1px solid green;
+    background: color-mix(in srgb, var(--primaryColor), white 90%);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Styling for het logo  */
+/* Ik gebruik flex om de svg & tekst uit te lijnen  */
+
+.logo {
+    display: flex; 
+    align-items: center;
+    gap: 1rem;
+    font-family: georgia;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo svg {
+    height: 4rem;
+}
+
+/* Cards  */
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    max-width: 200px;
+}

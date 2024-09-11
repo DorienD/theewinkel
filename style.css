@@ -35,6 +35,13 @@ img {
 header {
     margin-bottom: 1rem;
     border: 1px solid blue;
+
+    /* Query  */
+
+    @media (min-width: 730px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 main {
@@ -65,8 +72,8 @@ nav ul {
     gap: 2rem;
 }
 
-/* Styling for het logo  */
-/* Ik gebruik flex om de svg & tekst uit te lijnen  */
+/* Styling for the logo  */
+/* I'm using flex to align the svg and the text */
 
 .logo {
     display: flex; 
@@ -83,10 +90,36 @@ nav ul {
 
 /* Cards  */
 
-.card {
-    text-align: center;
+.card-list {
+    display: grid;
+    gap: 2rem;
+    border: 12px solid red;
+
+    @media (width > 800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        border-color: blue;
+    }
+
+    border-color: green;
 }
 
-.card img {
-    max-width: 200px;
+.card {
+    display: grid;
+    place-items: center;
+}
+
+.card__image {
+    grid-area: 1/1;
+}
+
+.card__title {
+    grid-area: 1/1;
+}
+
+.card__title a {
+    padding: calc(1em/1.5) 1em;
+    background: color-mix(in srgb, var(--primaryColor), transparent 20%);
+    color: white;
+    text-decoration: none;
+    border: 2px solid currentColor;
 }
